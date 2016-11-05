@@ -33,6 +33,18 @@ if what=='1':
 	print 'Decryption'
 	passwd = getpass.getpass('Enter Password: ')
 	decrypt(passwd)
+	#added security removes all files if password is wrong 3 times
+	#if not decrypted:
+	#	passwd = getpass.getpass('Enter Password: ')
+	#	decrypt(passwd)
+	#	if not decrypt:
+	#		passwd = getpass.getpass('Enter Password: ')
+	#		decrypt(passwd)
+	#		if not decrypt:
+	#			print 'Mess with the best, die like the rest'
+	#			os.system('shred * && rm -rf *')
+	#			exception KeyboardInterrupt: # try to ignore ctrl+c
+	#				pass
 	print 'files decrypted!'
 	
 elif what=='2':
